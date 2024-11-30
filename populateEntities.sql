@@ -1,0 +1,231 @@
+-- Drop tables if they exist
+DROP TABLE IF EXISTS EVENT_RESOURCES;
+DROP TABLE IF EXISTS EVENT;
+DROP TABLE IF EXISTS EXPENSE;
+DROP TABLE IF EXISTS VOLUNTEER;
+DROP TABLE IF EXISTS FEEDBACK;
+DROP TABLE IF EXISTS REGISTRATION;
+DROP TABLE IF EXISTS MEMBERSHIP;
+DROP TABLE IF EXISTS APPLICATION;
+DROP TABLE IF EXISTS RESOURCES;
+DROP TABLE IF EXISTS SPONSOR;
+DROP TABLE IF EXISTS CLUB;
+DROP TABLE IF EXISTS STAFF;
+DROP TABLE IF EXISTS DEPARTMENT;
+DROP TABLE IF EXISTS STUDENT;
+DROP TABLE IF EXISTS VENUE;
+
+
+-- Create the DEPARTMENT table
+CREATE TABLE DEPARTMENT (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(100)
+);
+
+-- Create the STUDENT table
+CREATE TABLE STUDENT (
+    ID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Email VARCHAR(100),
+    PhoneNum VARCHAR(15)
+);
+
+-- Create the VENUE table
+CREATE TABLE VENUE (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Location VARCHAR(100),
+    Capacity INT,
+    Availability BOOLEAN
+);
+
+-- Create the CLUB table (This should be before EVENT)
+CREATE TABLE CLUB (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    DepartmentID INT,
+    President INT,
+    FoundingDate DATE,
+    FOREIGN KEY (DepartmentID) REFERENCES DEPARTMENT(ID),
+    FOREIGN KEY (President) REFERENCES STUDENT(ID)
+);
+
+-- Create the EVENT table (Now CLUB exists)
+CREATE TABLE EVENT (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    EventType VARCHAR(50),
+    Date DATE,
+    Description TEXT,
+    ClubID INT,
+    VenueID INT,
+    FOREIGN KEY (ClubID) REFERENCES CLUB(ID),
+    FOREIGN KEY (VenueID) REFERENCES VENUE(ID)
+);
+
+-- Create the STAFF table
+CREATE TABLE STAFF (
+    ID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    Role VARCHAR(50)
+);
+
+-- Create the EXPENSE table
+CREATE TABLE EXPENSE (
+    ID INT PRIMARY KEY,
+    SpentAmount DECIMAL(10, 2),
+    Description TEXT,
+    EventID INT,
+    FOREIGN KEY (EventID) REFERENCES EVENT(ID)
+);
+
+-- Create the SPONSOR table
+CREATE TABLE SPONSOR (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    PhoneNum VARCHAR(15),
+    ContributionType VARCHAR(50),
+    Amount DECIMAL(10, 2)
+);
+
+-- Create the RESOURCES table
+CREATE TABLE RESOURCES (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Type VARCHAR(50),
+    Quantity INT
+);
+
+-- Create the EVENT_RESOURCES table
+CREATE TABLE EVENT_RESOURCES (
+    EventID INT,
+    ResourceID INT,
+    UsedAmount INT,
+    PRIMARY KEY (EventID, ResourceID),
+    FOREIGN KEY (EventID) REFERENCES EVENT(ID),
+    FOREIGN KEY (ResourceID) REFERENCES RESOURCES(ID)
+);
+
+-- Create the TASK table
+CREATE TABLE TASK (
+    ID INT PRIMARY KEY,
+    Description TEXT,
+    Deadline DATE,
+    Status VARCHAR(50)
+);
+
+-- Create the REGISTRATION table
+CREATE TABLE REGISTRATION (
+    ID INT PRIMARY KEY,
+    Timestamp DATETIME,
+    Attendance BOOLEAN,
+    EventID INT,
+    StudentID INT,
+    FOREIGN KEY (EventID) REFERENCES EVENT(ID),
+    FOREIGN KEY (StudentID) REFERENCES STUDENT(ID)
+);
+
+-- Create the MEMBERSHIP table
+CREATE TABLE MEMBERSHIP (
+    ID INT PRIMARY KEY,
+    JoinDate DATE,
+    ClubID INT,
+    StudentID INT,
+    FOREIGN KEY (ClubID) REFERENCES CLUB(ID),
+    FOREIGN KEY (StudentID) REFERENCES STUDENT(ID)
+);
+
+-- Create the VOLUNTEER table
+CREATE TABLE VOLUNTEER (
+    ID INT PRIMARY KEY,
+    Role VARCHAR(50),
+    Hours INT,
+    EventID INT,
+    StudentID INT,
+    FOREIGN KEY (EventID) REFERENCES EVENT(ID),
+    FOREIGN KEY (StudentID) REFERENCES STUDENT(ID)
+);
+
+-- Create the FEEDBACK table
+CREATE TABLE FEEDBACK (
+    ID INT PRIMARY KEY,
+    Rating INT,
+    Comments TEXT,
+    DateSubmitted DATE,
+    EventID INT,
+    StudentID INT,
+    FOREIGN KEY (EventID) REFERENCES EVENT(ID),
+    FOREIGN KEY (StudentID) REFERENCES STUDENT(ID)
+);
+
+-- Create the APPLICATION table
+CREATE TABLE APPLICATION (
+    ID INT PRIMARY KEY,
+    Position VARCHAR(50),
+    Date DATE,
+    Status VARCHAR(50),
+    ClubID INT,
+    StudentID INT,
+    FOREIGN KEY (ClubID) REFERENCES CLUB(ID),
+    FOREIGN KEY (StudentID) REFERENCES STUDENT(ID)
+);
+
+
+
+-- Enable local infile
+SET GLOBAL local_infile = 1;
+
+-- Load DEPARTMENT data (you'll need to generate this)
+LOAD DATA LOCAL INFILE 'departments.csv'
+INTO TABLE DEPARTMENT
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES 
+(ID, Name);
+
+-- Load STUDENT data
+LOAD DATA LOCAL INFILE 'students.csv'
+INTO TABLE STUDENT
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(ID, FirstName, LastName, Email, PhoneNum);
+
+-- Load CLUB data
+LOAD DATA LOCAL INFILE 'clubs.csv'
+INTO TABLE CLUB
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(ID, Name, DepartmentID, President, FoundingDate);
+
+-- Load EVENT data
+LOAD DATA LOCAL INFILE 'events.csv'
+INTO TABLE EVENT
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(ID, Name, EventType, Date, Description, ClubID, VenueID);
+
+-- Load EXPENSE data
+LOAD DATA LOCAL INFILE 'expenses.csv'
+INTO TABLE EXPENSE
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(ID, SpentAmount, Description, EventID);
+
+-- Load MEMBERSHIP data
+LOAD DATA LOCAL INFILE 'memberships.csv'
+INTO TABLE MEMBERSHIP
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(ID, JoinDate, ClubID, StudentID);

@@ -1,0 +1,1001 @@
+ID,Role,Hours,EventID,StudentID
+1,Setup,4,756,24
+2,Cleanup,2,462,525
+3,Registration,10,227,372
+4,Setup,1,452,33
+5,Cleanup,1,164,807
+6,Technical Support,3,997,457
+7,Registration,2,438,505
+8,Cleanup,9,526,642
+9,Technical Support,6,76,18
+10,Event Staff,10,790,40
+11,Setup,2,976,724
+12,Event Staff,5,240,400
+13,Event Staff,1,147,521
+14,Registration,8,853,85
+15,Cleanup,1,283,859
+16,Setup,1,584,445
+17,Event Staff,6,610,879
+18,Event Staff,10,414,6
+19,Technical Support,1,107,568
+20,Registration,6,48,307
+21,Technical Support,10,170,807
+22,Registration,5,707,250
+23,Event Staff,6,520,39
+24,Registration,2,6,121
+25,Setup,1,649,813
+26,Cleanup,5,364,844
+27,Cleanup,8,791,235
+28,Event Staff,6,649,957
+29,Setup,1,77,135
+30,Technical Support,8,515,149
+31,Technical Support,2,715,791
+32,Setup,5,629,858
+33,Cleanup,2,892,18
+34,Cleanup,6,614,632
+35,Event Staff,2,93,141
+36,Registration,2,34,498
+37,Technical Support,10,497,114
+38,Cleanup,10,616,577
+39,Setup,6,754,873
+40,Setup,7,962,596
+41,Registration,6,725,652
+42,Setup,1,751,480
+43,Registration,3,848,901
+44,Technical Support,10,830,610
+45,Registration,5,911,261
+46,Event Staff,1,860,146
+47,Technical Support,1,312,172
+48,Setup,2,732,281
+49,Setup,1,528,182
+50,Event Staff,5,333,236
+51,Registration,3,166,425
+52,Registration,2,304,370
+53,Technical Support,4,241,492
+54,Setup,7,58,803
+55,Cleanup,10,505,235
+56,Setup,2,960,567
+57,Cleanup,1,731,997
+58,Event Staff,10,974,847
+59,Cleanup,5,161,244
+60,Event Staff,4,700,712
+61,Cleanup,1,309,283
+62,Setup,4,879,383
+63,Technical Support,9,806,93
+64,Setup,1,376,899
+65,Setup,7,691,303
+66,Cleanup,4,747,966
+67,Registration,10,43,388
+68,Cleanup,7,938,671
+69,Setup,8,204,802
+70,Registration,5,491,113
+71,Registration,6,22,307
+72,Technical Support,8,211,266
+73,Cleanup,4,411,350
+74,Event Staff,7,515,666
+75,Technical Support,4,406,133
+76,Technical Support,6,724,628
+77,Setup,4,576,435
+78,Registration,2,605,109
+79,Setup,3,610,573
+80,Event Staff,5,386,111
+81,Registration,5,749,35
+82,Technical Support,9,597,907
+83,Cleanup,1,981,287
+84,Registration,4,456,242
+85,Setup,6,50,416
+86,Event Staff,9,647,509
+87,Registration,1,477,371
+88,Cleanup,7,733,706
+89,Registration,1,77,761
+90,Registration,7,232,297
+91,Event Staff,10,974,791
+92,Registration,6,243,879
+93,Registration,2,670,418
+94,Registration,5,522,965
+95,Event Staff,6,16,725
+96,Event Staff,9,927,36
+97,Technical Support,4,491,47
+98,Cleanup,4,192,357
+99,Technical Support,2,270,446
+100,Technical Support,9,152,712
+101,Cleanup,6,265,933
+102,Cleanup,2,798,612
+103,Registration,9,483,100
+104,Event Staff,8,317,972
+105,Registration,3,440,386
+106,Cleanup,10,533,496
+107,Setup,7,394,852
+108,Technical Support,6,983,251
+109,Event Staff,2,613,175
+110,Cleanup,8,501,934
+111,Setup,9,385,37
+112,Cleanup,4,510,562
+113,Setup,2,383,896
+114,Registration,6,720,718
+115,Technical Support,2,937,327
+116,Cleanup,10,972,326
+117,Event Staff,5,549,690
+118,Cleanup,7,266,404
+119,Event Staff,1,362,33
+120,Event Staff,6,20,787
+121,Setup,5,131,943
+122,Event Staff,8,318,457
+123,Registration,7,565,277
+124,Registration,5,269,247
+125,Event Staff,9,759,475
+126,Registration,7,286,492
+127,Cleanup,8,91,361
+128,Registration,1,868,891
+129,Cleanup,3,393,454
+130,Cleanup,2,789,911
+131,Technical Support,1,412,971
+132,Event Staff,9,488,145
+133,Registration,6,724,88
+134,Technical Support,9,77,898
+135,Event Staff,10,491,449
+136,Setup,5,669,801
+137,Setup,9,362,899
+138,Setup,1,893,316
+139,Setup,5,627,884
+140,Cleanup,6,503,234
+141,Setup,3,564,357
+142,Setup,6,472,21
+143,Technical Support,3,938,665
+144,Registration,4,22,787
+145,Cleanup,4,6,34
+146,Event Staff,5,449,18
+147,Cleanup,3,954,746
+148,Event Staff,5,13,676
+149,Cleanup,8,969,421
+150,Cleanup,9,299,86
+151,Event Staff,1,44,363
+152,Event Staff,7,551,858
+153,Registration,1,593,78
+154,Cleanup,9,119,901
+155,Cleanup,1,736,383
+156,Setup,8,189,845
+157,Event Staff,3,754,441
+158,Event Staff,5,967,693
+159,Registration,10,414,433
+160,Cleanup,9,669,67
+161,Setup,8,815,840
+162,Registration,9,603,558
+163,Registration,6,670,571
+164,Event Staff,10,717,833
+165,Setup,5,460,320
+166,Setup,3,499,742
+167,Registration,2,300,451
+168,Registration,7,539,189
+169,Technical Support,8,764,101
+170,Registration,2,247,245
+171,Registration,9,227,565
+172,Setup,9,339,714
+173,Registration,8,75,643
+174,Event Staff,2,197,921
+175,Technical Support,6,984,786
+176,Registration,5,56,915
+177,Registration,7,709,778
+178,Cleanup,9,700,323
+179,Registration,4,236,559
+180,Setup,2,927,137
+181,Cleanup,3,996,8
+182,Event Staff,10,890,839
+183,Registration,10,175,292
+184,Registration,4,920,48
+185,Event Staff,5,637,360
+186,Cleanup,7,742,253
+187,Setup,4,600,269
+188,Setup,8,705,378
+189,Technical Support,6,350,124
+190,Event Staff,7,321,209
+191,Event Staff,3,67,356
+192,Event Staff,10,456,116
+193,Technical Support,4,869,957
+194,Registration,6,114,767
+195,Setup,9,235,982
+196,Setup,3,994,61
+197,Cleanup,4,747,429
+198,Event Staff,6,354,135
+199,Registration,4,234,287
+200,Event Staff,9,270,597
+201,Event Staff,2,639,313
+202,Technical Support,8,835,748
+203,Event Staff,5,56,452
+204,Registration,3,399,612
+205,Technical Support,10,364,331
+206,Setup,7,1,692
+207,Technical Support,10,81,6
+208,Registration,1,573,880
+209,Cleanup,2,60,311
+210,Registration,8,415,343
+211,Cleanup,2,702,948
+212,Registration,10,70,784
+213,Event Staff,3,687,220
+214,Technical Support,8,66,508
+215,Technical Support,10,901,470
+216,Event Staff,10,943,566
+217,Technical Support,4,162,375
+218,Technical Support,8,432,859
+219,Registration,9,386,53
+220,Event Staff,10,367,131
+221,Setup,6,83,111
+222,Cleanup,5,521,812
+223,Setup,8,223,728
+224,Setup,10,769,303
+225,Cleanup,10,882,697
+226,Setup,6,247,768
+227,Setup,3,983,919
+228,Event Staff,5,652,247
+229,Cleanup,3,340,977
+230,Technical Support,6,506,36
+231,Event Staff,5,674,883
+232,Cleanup,2,533,573
+233,Registration,7,157,871
+234,Setup,1,406,969
+235,Event Staff,7,195,359
+236,Registration,4,455,135
+237,Registration,9,984,700
+238,Technical Support,7,755,308
+239,Setup,7,895,532
+240,Event Staff,7,115,517
+241,Event Staff,2,608,518
+242,Setup,10,82,290
+243,Technical Support,7,258,649
+244,Cleanup,10,823,661
+245,Event Staff,6,598,7
+246,Setup,4,963,834
+247,Registration,10,683,740
+248,Setup,4,798,334
+249,Technical Support,10,118,159
+250,Registration,10,881,593
+251,Event Staff,5,752,302
+252,Technical Support,5,397,798
+253,Event Staff,3,360,659
+254,Setup,5,804,592
+255,Setup,5,780,725
+256,Cleanup,10,165,52
+257,Cleanup,3,884,991
+258,Cleanup,4,913,588
+259,Event Staff,2,195,904
+260,Registration,6,369,663
+261,Registration,5,402,166
+262,Registration,2,819,884
+263,Setup,6,138,808
+264,Cleanup,6,48,496
+265,Setup,10,618,180
+266,Setup,8,923,628
+267,Setup,4,155,474
+268,Event Staff,2,846,858
+269,Technical Support,3,281,618
+270,Setup,1,392,386
+271,Technical Support,4,377,588
+272,Event Staff,5,951,631
+273,Event Staff,3,35,407
+274,Cleanup,4,582,87
+275,Technical Support,8,103,103
+276,Cleanup,7,161,813
+277,Setup,3,627,256
+278,Registration,3,895,607
+279,Setup,4,890,186
+280,Technical Support,10,657,324
+281,Registration,8,553,896
+282,Technical Support,3,891,993
+283,Technical Support,4,417,465
+284,Cleanup,6,927,184
+285,Technical Support,7,553,940
+286,Event Staff,1,419,99
+287,Cleanup,10,483,654
+288,Event Staff,1,931,892
+289,Registration,4,210,516
+290,Technical Support,9,768,693
+291,Technical Support,8,30,159
+292,Cleanup,10,913,173
+293,Event Staff,2,803,780
+294,Cleanup,2,206,975
+295,Cleanup,7,421,525
+296,Cleanup,10,31,742
+297,Technical Support,4,886,750
+298,Registration,4,162,776
+299,Registration,9,613,649
+300,Cleanup,2,744,495
+301,Registration,4,783,267
+302,Event Staff,2,190,580
+303,Event Staff,6,299,206
+304,Technical Support,4,429,163
+305,Technical Support,3,800,249
+306,Registration,10,743,787
+307,Cleanup,4,250,352
+308,Setup,1,30,290
+309,Event Staff,8,957,436
+310,Technical Support,4,565,835
+311,Technical Support,7,625,926
+312,Technical Support,5,934,622
+313,Technical Support,2,186,786
+314,Setup,1,845,406
+315,Registration,2,334,496
+316,Registration,9,624,351
+317,Setup,9,963,108
+318,Setup,2,831,629
+319,Registration,9,594,604
+320,Event Staff,8,244,959
+321,Technical Support,9,70,209
+322,Setup,10,359,187
+323,Setup,3,106,525
+324,Cleanup,1,830,44
+325,Setup,5,879,532
+326,Technical Support,4,360,985
+327,Event Staff,1,559,463
+328,Event Staff,8,58,474
+329,Event Staff,8,16,202
+330,Technical Support,9,247,748
+331,Cleanup,9,531,351
+332,Registration,6,339,568
+333,Setup,9,748,366
+334,Setup,7,671,420
+335,Setup,5,853,131
+336,Registration,10,345,261
+337,Cleanup,6,420,371
+338,Cleanup,4,654,369
+339,Setup,4,11,475
+340,Technical Support,6,695,477
+341,Technical Support,9,954,353
+342,Event Staff,2,50,822
+343,Event Staff,10,145,29
+344,Event Staff,2,23,58
+345,Registration,3,385,518
+346,Cleanup,10,277,824
+347,Technical Support,3,841,679
+348,Cleanup,10,442,335
+349,Setup,5,953,339
+350,Cleanup,4,684,121
+351,Setup,5,12,752
+352,Registration,4,24,933
+353,Registration,10,8,312
+354,Registration,8,374,657
+355,Cleanup,7,742,68
+356,Event Staff,10,163,911
+357,Cleanup,1,895,179
+358,Cleanup,1,11,785
+359,Registration,1,56,890
+360,Registration,7,382,909
+361,Cleanup,4,394,303
+362,Registration,4,875,141
+363,Technical Support,6,447,606
+364,Setup,1,769,749
+365,Registration,7,315,421
+366,Setup,10,678,252
+367,Setup,2,237,409
+368,Cleanup,7,454,244
+369,Event Staff,9,215,694
+370,Registration,4,600,86
+371,Technical Support,3,659,964
+372,Event Staff,4,117,267
+373,Technical Support,9,416,734
+374,Event Staff,4,285,118
+375,Registration,4,453,1
+376,Registration,8,756,620
+377,Event Staff,2,100,404
+378,Technical Support,2,53,963
+379,Registration,4,601,744
+380,Cleanup,2,546,345
+381,Technical Support,7,357,715
+382,Technical Support,4,200,147
+383,Cleanup,9,563,403
+384,Setup,7,864,895
+385,Registration,6,347,754
+386,Event Staff,2,432,326
+387,Registration,9,574,414
+388,Registration,5,856,78
+389,Registration,5,318,772
+390,Setup,8,508,262
+391,Cleanup,4,936,993
+392,Setup,6,210,501
+393,Registration,9,645,496
+394,Registration,5,53,169
+395,Event Staff,8,446,307
+396,Cleanup,6,787,309
+397,Event Staff,1,12,102
+398,Registration,10,261,671
+399,Setup,4,731,936
+400,Registration,7,536,690
+401,Registration,9,800,183
+402,Setup,1,540,926
+403,Registration,4,23,264
+404,Setup,2,603,152
+405,Setup,6,523,158
+406,Cleanup,2,197,662
+407,Registration,3,697,247
+408,Setup,9,528,201
+409,Setup,7,502,242
+410,Event Staff,7,718,794
+411,Cleanup,3,855,376
+412,Technical Support,4,433,276
+413,Registration,10,422,98
+414,Technical Support,2,467,394
+415,Registration,1,122,381
+416,Registration,7,956,270
+417,Event Staff,7,447,16
+418,Event Staff,4,175,15
+419,Cleanup,2,498,339
+420,Registration,1,703,622
+421,Technical Support,10,137,392
+422,Cleanup,2,208,611
+423,Registration,8,381,263
+424,Cleanup,10,390,667
+425,Event Staff,6,271,578
+426,Event Staff,4,323,564
+427,Cleanup,8,122,421
+428,Registration,7,61,949
+429,Technical Support,3,814,865
+430,Registration,6,682,264
+431,Setup,5,334,97
+432,Technical Support,4,981,805
+433,Setup,4,665,725
+434,Cleanup,6,25,461
+435,Setup,6,351,176
+436,Registration,4,744,263
+437,Technical Support,9,135,830
+438,Event Staff,4,677,163
+439,Technical Support,9,569,515
+440,Cleanup,7,198,873
+441,Registration,10,819,747
+442,Event Staff,4,282,852
+443,Registration,2,30,46
+444,Setup,1,866,725
+445,Registration,4,710,971
+446,Setup,7,241,718
+447,Setup,8,871,95
+448,Cleanup,10,448,741
+449,Event Staff,7,257,572
+450,Event Staff,1,959,808
+451,Registration,4,36,169
+452,Technical Support,8,55,328
+453,Registration,1,855,317
+454,Setup,8,634,303
+455,Event Staff,8,588,681
+456,Technical Support,4,571,506
+457,Registration,9,768,900
+458,Technical Support,2,287,417
+459,Cleanup,9,503,276
+460,Technical Support,8,244,901
+461,Event Staff,6,186,739
+462,Cleanup,2,895,645
+463,Event Staff,2,721,641
+464,Cleanup,10,207,464
+465,Event Staff,1,440,327
+466,Registration,1,563,432
+467,Technical Support,8,800,803
+468,Registration,3,380,369
+469,Setup,10,353,309
+470,Setup,4,61,141
+471,Technical Support,8,1,982
+472,Event Staff,10,468,606
+473,Technical Support,8,268,548
+474,Cleanup,10,375,798
+475,Registration,7,911,405
+476,Cleanup,8,958,738
+477,Registration,3,551,299
+478,Cleanup,1,574,384
+479,Setup,9,683,742
+480,Setup,7,293,908
+481,Technical Support,6,64,637
+482,Event Staff,10,375,394
+483,Event Staff,9,842,971
+484,Setup,2,833,512
+485,Setup,6,881,688
+486,Setup,10,455,653
+487,Registration,3,275,754
+488,Event Staff,5,918,332
+489,Cleanup,3,961,829
+490,Cleanup,10,20,268
+491,Setup,5,711,10
+492,Cleanup,5,894,612
+493,Registration,4,435,984
+494,Setup,9,908,306
+495,Technical Support,3,103,205
+496,Event Staff,3,680,181
+497,Technical Support,7,118,720
+498,Setup,6,367,186
+499,Technical Support,4,178,704
+500,Registration,3,495,651
+501,Technical Support,4,955,691
+502,Event Staff,6,348,951
+503,Event Staff,6,834,393
+504,Cleanup,6,165,871
+505,Registration,9,648,793
+506,Registration,8,568,715
+507,Event Staff,9,153,587
+508,Event Staff,2,837,576
+509,Cleanup,2,162,529
+510,Setup,7,528,479
+511,Technical Support,4,164,939
+512,Registration,5,393,700
+513,Registration,7,197,383
+514,Registration,5,702,204
+515,Registration,1,691,313
+516,Technical Support,1,151,52
+517,Event Staff,9,551,947
+518,Registration,7,350,947
+519,Event Staff,10,635,951
+520,Cleanup,9,313,776
+521,Registration,7,881,422
+522,Registration,5,559,700
+523,Setup,2,532,607
+524,Cleanup,6,540,18
+525,Cleanup,3,596,498
+526,Registration,1,335,555
+527,Registration,7,155,488
+528,Cleanup,1,348,961
+529,Registration,4,662,722
+530,Event Staff,8,236,465
+531,Event Staff,7,749,366
+532,Event Staff,8,733,403
+533,Registration,1,549,249
+534,Setup,2,498,64
+535,Registration,2,327,707
+536,Registration,1,527,991
+537,Event Staff,1,684,965
+538,Technical Support,1,395,563
+539,Setup,9,270,174
+540,Setup,6,158,287
+541,Setup,1,899,882
+542,Cleanup,5,506,533
+543,Registration,2,901,180
+544,Registration,3,49,762
+545,Registration,8,702,139
+546,Setup,9,632,58
+547,Cleanup,6,575,862
+548,Setup,9,526,634
+549,Technical Support,2,666,943
+550,Event Staff,3,819,862
+551,Cleanup,4,380,848
+552,Technical Support,5,138,976
+553,Cleanup,1,956,275
+554,Registration,7,604,950
+555,Registration,5,166,545
+556,Technical Support,3,926,901
+557,Technical Support,10,492,548
+558,Technical Support,3,821,747
+559,Registration,4,528,520
+560,Technical Support,6,453,488
+561,Registration,8,434,118
+562,Technical Support,9,799,763
+563,Setup,6,163,253
+564,Registration,9,879,433
+565,Registration,6,217,888
+566,Event Staff,3,747,279
+567,Event Staff,6,754,528
+568,Registration,10,22,4
+569,Registration,1,199,243
+570,Setup,4,398,799
+571,Event Staff,9,333,271
+572,Setup,8,932,496
+573,Registration,6,133,964
+574,Setup,1,729,271
+575,Registration,1,37,422
+576,Cleanup,8,593,844
+577,Cleanup,7,677,111
+578,Event Staff,10,436,121
+579,Registration,8,883,415
+580,Technical Support,4,629,684
+581,Setup,3,343,13
+582,Technical Support,4,185,417
+583,Setup,1,468,873
+584,Technical Support,3,937,682
+585,Setup,4,971,610
+586,Registration,10,337,957
+587,Event Staff,10,381,584
+588,Setup,8,379,412
+589,Technical Support,9,659,116
+590,Setup,7,849,832
+591,Registration,9,492,966
+592,Registration,6,283,210
+593,Setup,3,714,461
+594,Technical Support,10,978,858
+595,Setup,1,257,653
+596,Event Staff,2,805,344
+597,Technical Support,9,761,538
+598,Technical Support,4,648,327
+599,Technical Support,7,586,922
+600,Event Staff,3,54,286
+601,Event Staff,4,121,975
+602,Event Staff,2,480,857
+603,Registration,1,63,552
+604,Technical Support,9,853,543
+605,Event Staff,3,638,855
+606,Technical Support,1,525,852
+607,Setup,2,506,28
+608,Registration,6,477,559
+609,Setup,5,896,27
+610,Cleanup,10,317,406
+611,Registration,1,43,873
+612,Event Staff,5,622,113
+613,Setup,5,622,417
+614,Registration,1,624,394
+615,Cleanup,5,47,12
+616,Event Staff,6,426,871
+617,Setup,7,190,612
+618,Setup,1,978,562
+619,Event Staff,9,457,385
+620,Setup,10,267,354
+621,Event Staff,3,955,835
+622,Registration,6,855,104
+623,Event Staff,5,880,582
+624,Cleanup,4,197,894
+625,Technical Support,7,610,543
+626,Registration,10,80,670
+627,Technical Support,8,300,969
+628,Technical Support,10,499,548
+629,Cleanup,2,30,772
+630,Setup,2,69,450
+631,Setup,3,982,185
+632,Technical Support,6,879,904
+633,Setup,7,864,153
+634,Cleanup,10,503,144
+635,Technical Support,8,682,49
+636,Setup,4,527,968
+637,Setup,8,685,84
+638,Setup,2,670,182
+639,Registration,6,429,58
+640,Technical Support,6,222,879
+641,Technical Support,8,544,936
+642,Event Staff,3,572,935
+643,Cleanup,2,500,5
+644,Registration,10,595,677
+645,Setup,7,943,127
+646,Registration,7,859,151
+647,Setup,2,540,109
+648,Event Staff,4,271,513
+649,Event Staff,3,34,423
+650,Setup,7,923,86
+651,Registration,3,379,871
+652,Event Staff,2,457,218
+653,Event Staff,8,812,794
+654,Registration,2,929,542
+655,Event Staff,8,82,824
+656,Technical Support,6,246,6
+657,Event Staff,10,918,984
+658,Setup,9,135,618
+659,Registration,4,954,309
+660,Cleanup,2,837,920
+661,Setup,5,743,293
+662,Technical Support,7,604,766
+663,Registration,6,225,829
+664,Cleanup,1,129,971
+665,Setup,3,677,608
+666,Cleanup,5,463,161
+667,Registration,1,535,742
+668,Registration,1,236,655
+669,Cleanup,8,889,444
+670,Technical Support,6,59,615
+671,Event Staff,8,520,665
+672,Cleanup,2,211,146
+673,Event Staff,6,109,77
+674,Cleanup,10,23,790
+675,Registration,3,802,388
+676,Cleanup,4,859,580
+677,Cleanup,5,469,877
+678,Registration,3,496,568
+679,Cleanup,4,818,952
+680,Registration,10,72,527
+681,Registration,3,401,330
+682,Event Staff,10,739,449
+683,Technical Support,10,25,982
+684,Cleanup,6,964,676
+685,Event Staff,6,627,350
+686,Technical Support,4,674,797
+687,Setup,1,712,441
+688,Cleanup,1,68,907
+689,Event Staff,2,453,326
+690,Registration,3,317,893
+691,Setup,3,646,572
+692,Registration,8,858,266
+693,Cleanup,10,384,849
+694,Event Staff,3,491,35
+695,Event Staff,5,980,28
+696,Registration,7,136,160
+697,Cleanup,7,908,72
+698,Technical Support,8,522,491
+699,Technical Support,8,57,869
+700,Event Staff,10,272,352
+701,Technical Support,7,775,230
+702,Setup,3,215,60
+703,Event Staff,4,630,298
+704,Technical Support,5,191,641
+705,Technical Support,4,23,556
+706,Event Staff,9,18,42
+707,Registration,9,989,76
+708,Event Staff,5,513,151
+709,Event Staff,4,466,622
+710,Technical Support,5,494,679
+711,Cleanup,9,492,166
+712,Cleanup,9,406,612
+713,Setup,9,232,712
+714,Setup,9,776,198
+715,Event Staff,10,825,89
+716,Registration,1,824,212
+717,Setup,5,464,644
+718,Cleanup,9,301,690
+719,Registration,6,983,889
+720,Cleanup,8,431,534
+721,Setup,5,83,54
+722,Event Staff,5,472,322
+723,Event Staff,3,813,333
+724,Cleanup,10,176,773
+725,Registration,4,945,916
+726,Event Staff,4,80,101
+727,Registration,7,532,495
+728,Technical Support,10,165,634
+729,Registration,6,298,870
+730,Event Staff,7,793,9
+731,Setup,6,621,497
+732,Technical Support,4,245,987
+733,Technical Support,4,34,616
+734,Technical Support,4,386,440
+735,Event Staff,1,797,205
+736,Cleanup,8,142,562
+737,Registration,8,113,421
+738,Setup,6,904,75
+739,Technical Support,5,602,861
+740,Technical Support,6,698,547
+741,Setup,3,608,230
+742,Cleanup,6,714,617
+743,Registration,1,957,981
+744,Technical Support,6,742,45
+745,Registration,10,625,457
+746,Technical Support,7,874,797
+747,Technical Support,10,207,487
+748,Event Staff,1,908,260
+749,Registration,1,440,791
+750,Setup,3,883,667
+751,Event Staff,7,135,315
+752,Registration,1,5,448
+753,Registration,4,717,82
+754,Setup,10,640,818
+755,Cleanup,7,689,835
+756,Setup,9,740,319
+757,Cleanup,6,381,134
+758,Registration,10,146,345
+759,Registration,3,2,840
+760,Event Staff,3,345,410
+761,Event Staff,4,579,682
+762,Setup,3,545,107
+763,Event Staff,2,21,588
+764,Technical Support,9,373,13
+765,Cleanup,8,821,444
+766,Registration,1,669,748
+767,Event Staff,7,918,89
+768,Registration,7,953,462
+769,Cleanup,5,889,777
+770,Cleanup,4,720,310
+771,Event Staff,9,841,535
+772,Setup,3,46,916
+773,Setup,6,326,113
+774,Event Staff,5,417,735
+775,Cleanup,7,456,748
+776,Event Staff,10,702,447
+777,Technical Support,1,62,427
+778,Event Staff,4,248,78
+779,Cleanup,6,558,551
+780,Cleanup,2,269,333
+781,Technical Support,6,195,689
+782,Registration,7,254,54
+783,Technical Support,1,944,964
+784,Cleanup,2,385,105
+785,Event Staff,2,468,398
+786,Setup,5,916,188
+787,Technical Support,10,819,506
+788,Technical Support,10,254,835
+789,Technical Support,8,167,505
+790,Setup,6,440,767
+791,Event Staff,4,13,389
+792,Technical Support,6,578,584
+793,Registration,9,434,346
+794,Event Staff,10,588,806
+795,Registration,2,733,265
+796,Technical Support,8,101,95
+797,Registration,2,604,929
+798,Cleanup,1,605,488
+799,Technical Support,2,152,20
+800,Event Staff,8,768,884
+801,Technical Support,3,127,327
+802,Registration,4,130,352
+803,Registration,7,897,797
+804,Cleanup,7,49,142
+805,Technical Support,2,778,764
+806,Registration,10,761,946
+807,Setup,9,837,89
+808,Setup,2,618,245
+809,Setup,1,493,665
+810,Cleanup,10,803,35
+811,Event Staff,9,367,59
+812,Setup,8,108,847
+813,Technical Support,1,850,315
+814,Cleanup,7,763,473
+815,Registration,2,567,603
+816,Cleanup,4,355,134
+817,Cleanup,7,224,812
+818,Technical Support,8,483,718
+819,Technical Support,9,861,325
+820,Setup,9,133,519
+821,Technical Support,1,932,451
+822,Setup,7,667,310
+823,Event Staff,1,969,359
+824,Registration,10,690,687
+825,Registration,7,111,127
+826,Event Staff,6,316,769
+827,Event Staff,6,142,760
+828,Registration,1,135,650
+829,Event Staff,9,834,373
+830,Setup,10,178,39
+831,Setup,5,577,808
+832,Cleanup,10,801,737
+833,Technical Support,8,395,112
+834,Cleanup,4,606,338
+835,Cleanup,4,59,479
+836,Setup,10,215,445
+837,Event Staff,1,335,643
+838,Cleanup,7,460,331
+839,Registration,2,564,219
+840,Cleanup,6,213,361
+841,Cleanup,1,341,464
+842,Registration,3,15,174
+843,Cleanup,10,547,287
+844,Technical Support,4,236,555
+845,Event Staff,1,859,684
+846,Event Staff,6,990,596
+847,Registration,8,944,719
+848,Cleanup,6,184,138
+849,Technical Support,1,593,279
+850,Technical Support,2,775,444
+851,Cleanup,7,188,326
+852,Cleanup,7,857,829
+853,Setup,8,239,237
+854,Registration,4,646,137
+855,Registration,4,502,351
+856,Technical Support,2,924,573
+857,Cleanup,4,828,565
+858,Technical Support,7,356,424
+859,Registration,1,268,795
+860,Setup,4,327,645
+861,Registration,3,879,565
+862,Registration,6,283,278
+863,Technical Support,5,92,765
+864,Technical Support,7,477,953
+865,Event Staff,1,819,279
+866,Technical Support,2,164,158
+867,Technical Support,10,143,818
+868,Event Staff,5,914,219
+869,Registration,9,610,698
+870,Technical Support,6,383,69
+871,Registration,5,677,855
+872,Event Staff,9,263,955
+873,Registration,2,611,995
+874,Event Staff,8,923,404
+875,Technical Support,7,762,587
+876,Registration,4,707,210
+877,Cleanup,1,787,453
+878,Event Staff,3,663,995
+879,Event Staff,9,439,577
+880,Event Staff,6,379,775
+881,Registration,3,712,577
+882,Event Staff,1,979,303
+883,Setup,2,534,616
+884,Event Staff,5,865,869
+885,Registration,10,985,454
+886,Cleanup,3,700,142
+887,Technical Support,3,83,185
+888,Setup,8,557,658
+889,Event Staff,4,428,220
+890,Event Staff,8,961,518
+891,Event Staff,9,590,921
+892,Technical Support,6,348,896
+893,Event Staff,10,429,808
+894,Setup,7,628,78
+895,Technical Support,2,594,171
+896,Registration,2,883,7
+897,Registration,3,822,816
+898,Technical Support,9,329,550
+899,Technical Support,2,360,420
+900,Registration,9,56,984
+901,Event Staff,5,563,812
+902,Setup,9,174,869
+903,Cleanup,7,57,740
+904,Technical Support,5,805,68
+905,Event Staff,6,319,238
+906,Registration,8,147,247
+907,Technical Support,10,865,780
+908,Registration,5,16,894
+909,Setup,7,405,949
+910,Event Staff,2,497,108
+911,Event Staff,7,159,444
+912,Cleanup,6,964,94
+913,Setup,9,119,174
+914,Cleanup,3,501,860
+915,Technical Support,7,355,124
+916,Setup,9,626,99
+917,Technical Support,6,682,594
+918,Event Staff,2,302,322
+919,Technical Support,7,395,618
+920,Technical Support,3,218,459
+921,Event Staff,7,186,446
+922,Setup,9,310,857
+923,Registration,2,924,156
+924,Setup,4,880,250
+925,Setup,8,503,89
+926,Event Staff,7,462,186
+927,Setup,9,478,554
+928,Registration,7,748,120
+929,Event Staff,4,735,135
+930,Registration,2,991,594
+931,Setup,1,792,742
+932,Setup,1,68,555
+933,Event Staff,7,13,865
+934,Registration,1,495,32
+935,Registration,5,374,927
+936,Cleanup,9,23,691
+937,Setup,5,360,596
+938,Cleanup,4,256,178
+939,Technical Support,4,664,121
+940,Registration,6,890,422
+941,Technical Support,4,277,698
+942,Event Staff,9,879,497
+943,Cleanup,5,98,297
+944,Registration,6,617,308
+945,Registration,6,646,994
+946,Setup,10,960,821
+947,Cleanup,5,981,702
+948,Setup,7,984,971
+949,Cleanup,2,680,53
+950,Registration,4,588,630
+951,Technical Support,7,3,816
+952,Registration,8,350,131
+953,Technical Support,10,886,582
+954,Event Staff,6,209,231
+955,Event Staff,7,420,533
+956,Registration,3,796,727
+957,Technical Support,7,458,962
+958,Technical Support,2,369,336
+959,Setup,8,930,156
+960,Registration,6,543,670
+961,Event Staff,7,581,61
+962,Technical Support,3,798,248
+963,Setup,2,135,166
+964,Technical Support,8,657,661
+965,Event Staff,7,723,902
+966,Technical Support,3,420,666
+967,Event Staff,10,175,876
+968,Cleanup,8,655,474
+969,Setup,10,656,828
+970,Event Staff,10,69,536
+971,Event Staff,5,223,402
+972,Setup,10,571,500
+973,Technical Support,8,492,563
+974,Cleanup,8,652,893
+975,Event Staff,1,911,689
+976,Event Staff,9,802,848
+977,Registration,5,465,449
+978,Registration,2,76,764
+979,Technical Support,1,600,773
+980,Registration,10,195,620
+981,Cleanup,1,534,787
+982,Registration,6,860,290
+983,Setup,1,180,835
+984,Setup,5,731,510
+985,Cleanup,10,495,270
+986,Registration,9,54,976
+987,Registration,2,777,916
+988,Setup,9,870,103
+989,Setup,8,121,926
+990,Setup,5,873,826
+991,Registration,9,977,566
+992,Event Staff,3,157,354
+993,Registration,5,767,531
+994,Event Staff,7,605,266
+995,Cleanup,7,683,329
+996,Registration,5,874,869
+997,Setup,1,437,741
+998,Registration,7,864,663
+999,Setup,10,231,653
+1000,Registration,4,814,676
