@@ -14,12 +14,18 @@ DROP TABLE IF EXISTS STAFF;
 DROP TABLE IF EXISTS DEPARTMENT;
 DROP TABLE IF EXISTS STUDENT;
 DROP TABLE IF EXISTS VENUE;
+DROP TABLE IF EXISTS TASK;
 
 
 -- Create the DEPARTMENT table
 CREATE TABLE DEPARTMENT (
     ID INT PRIMARY KEY,
     Name VARCHAR(100)
+);
+
+CREATE TABLE Test (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(50)
 );
 
 -- Create the STUDENT table
@@ -34,7 +40,7 @@ CREATE TABLE STUDENT (
 -- Create the VENUE table
 CREATE TABLE VENUE (
     ID INT PRIMARY KEY,
-    Name VARCHAR(100),
+    Name VARCHAR (100) ,
     Location VARCHAR(100),
     Capacity INT,
     Availability BOOLEAN
@@ -173,59 +179,56 @@ CREATE TABLE APPLICATION (
 
 
 
--- Enable local infile
-SET GLOBAL local_infile = 1;
+-- -- Load DEPARTMENT data (you'll need to generate this)
+-- LOAD DATA LOCAL INFILE 'departments.csv'
+-- INTO TABLE DEPARTMENT
+-- FIELDS TERMINATED BY ',' 
+-- ENCLOSED BY '"'
+-- LINES TERMINATED BY '\n'
+-- IGNORE 1 LINES 
+-- (ID, Name);
 
--- Load DEPARTMENT data (you'll need to generate this)
-LOAD DATA LOCAL INFILE 'departments.csv'
-INTO TABLE DEPARTMENT
-FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 LINES 
-(ID, Name);
+-- -- Load STUDENT data
+-- LOAD DATA LOCAL INFILE 'students.csv'
+-- INTO TABLE STUDENT
+-- FIELDS TERMINATED BY ',' 
+-- ENCLOSED BY '"'
+-- LINES TERMINATED BY '\n'
+-- IGNORE 1 LINES
+-- (ID, FirstName, LastName, Email, PhoneNum);
 
--- Load STUDENT data
-LOAD DATA LOCAL INFILE 'students.csv'
-INTO TABLE STUDENT
-FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 LINES
-(ID, FirstName, LastName, Email, PhoneNum);
+-- -- Load CLUB data
+-- LOAD DATA LOCAL INFILE 'clubs.csv'
+-- INTO TABLE CLUB
+-- FIELDS TERMINATED BY ',' 
+-- ENCLOSED BY '"'
+-- LINES TERMINATED BY '\n'
+-- IGNORE 1 LINES
+-- (ID, Name, DepartmentID, President, FoundingDate);
 
--- Load CLUB data
-LOAD DATA LOCAL INFILE 'clubs.csv'
-INTO TABLE CLUB
-FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 LINES
-(ID, Name, DepartmentID, President, FoundingDate);
+-- -- Load EVENT data
+-- LOAD DATA LOCAL INFILE 'events.csv'
+-- INTO TABLE EVENT
+-- FIELDS TERMINATED BY ',' 
+-- ENCLOSED BY '"'
+-- LINES TERMINATED BY '\n'
+-- IGNORE 1 LINES
+-- (ID, Name, EventType, Date, Description, ClubID, VenueID);
 
--- Load EVENT data
-LOAD DATA LOCAL INFILE 'events.csv'
-INTO TABLE EVENT
-FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 LINES
-(ID, Name, EventType, Date, Description, ClubID, VenueID);
+-- -- Load EXPENSE data
+-- LOAD DATA LOCAL INFILE 'expenses.csv'
+-- INTO TABLE EXPENSE
+-- FIELDS TERMINATED BY ',' 
+-- ENCLOSED BY '"'
+-- LINES TERMINATED BY '\n'
+-- IGNORE 1 LINES
+-- (ID, SpentAmount, Description, EventID);
 
--- Load EXPENSE data
-LOAD DATA LOCAL INFILE 'expenses.csv'
-INTO TABLE EXPENSE
-FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 LINES
-(ID, SpentAmount, Description, EventID);
-
--- Load MEMBERSHIP data
-LOAD DATA LOCAL INFILE 'memberships.csv'
-INTO TABLE MEMBERSHIP
-FIELDS TERMINATED BY ',' 
-ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 LINES
-(ID, JoinDate, ClubID, StudentID);
+-- -- Load MEMBERSHIP data
+-- LOAD DATA LOCAL INFILE 'memberships.csv'
+-- INTO TABLE MEMBERSHIP
+-- FIELDS TERMINATED BY ',' 
+-- ENCLOSED BY '"'
+-- LINES TERMINATED BY '\n'
+-- IGNORE 1 LINES
+-- (ID, JoinDate, ClubID, StudentID);
