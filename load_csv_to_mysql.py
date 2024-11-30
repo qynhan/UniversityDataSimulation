@@ -2,35 +2,35 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 # Database connection configuration
-DB_USER = 'root'          # Replace with your MySQL username
-DB_PASSWORD = 'password'  # Replace with your MySQL password
-DB_HOST = 'localhost'          # Replace with your host (default: localhost)
-DB_NAME = 'UniversityDatabase'      # Replace with your database name
+DB_USER = 'root'          # MySQL username
+DB_PASSWORD = 'password'  # MySQL password
+DB_HOST = 'localhost'     # host (default: localhost)
+DB_NAME = 'UniversityData'  # database name
 
 # Establish database connection
 engine = create_engine(f'mysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}')
 
-# List of tables and their corresponding CSV files
+# List of tables and their corresponding CSV files (ordered for parent tables first)
 tables_and_files = {
-    "DEPARTMENT": "departments.csv",
-    "STUDENT": "students.csv",
-    "VENUE": "venues.csv",
-    "CLUB": "clubs.csv",
-    "EVENT": "events.csv",
-    "STAFF": "staff.csv",
-    "EXPENSE": "expenses.csv",
-    "SPONSOR": "sponsors.csv",
-    "RESOURCES": "resources.csv",
-    "EVENT_RESOURCES": "event_resources.csv",
-    "TASK": "tasks.csv",
-    "REGISTRATION": "registrations.csv",
-    "MEMBERSHIP": "memberships.csv",
-    "VOLUNTEER": "volunteers.csv",
-    "FEEDBACK": "feedbacks.csv",
-    "APPLICATION": "applications.csv",
+    "DEPARTMENT": "entitiesCsv/departments.csv",
+    "STUDENT": "entitiesCsv/students.csv",
+    "VENUE": "entitiesCsv/venues.csv",
+    "CLUB": "entitiesCsv/clubs.csv",   # CLUB should come after DEPARTMENT and STUDENT
+    "EVENT": "entitiesCsv/events.csv",  # EVENT should come after CLUB and VENUE
+    "STAFF": "entitiesCsv/staff.csv",
+    "EXPENSE": "entitiesCsv/expenses.csv",  # Ensure EVENT exists before EXPENSE
+    "SPONSOR": "entitiesCsv/sponsors.csv",
+    "RESOURCES": "entitiesCsv/resources.csv",
+    "EVENT_RESOURCES": "entitiesCsv/event_resources.csv",  # Ensure EVENT and RESOURCES exist
+    "TASK": "entitiesCsv/tasks.csv",
+    "REGISTRATION": "entitiesCsv/registrations.csv",  # Ensure EVENT and STUDENT exist
+    "MEMBERSHIP": "entitiesCsv/memberships.csv",  # Ensure CLUB and STUDENT exist
+    "VOLUNTEER": "entitiesCsv/volunteers.csv",  # Ensure EVENT and STUDENT exist
+    "FEEDBACK": "entitiesCsv/feedbacks.csv",  # Ensure EVENT and STUDENT exist
+    "APPLICATION": "entitiesCsv/applications.csv",  # Ensure CLUB and STUDENT exist
 }
 
-# Load each CSV file into its corresponding table
+# Insert data into tables
 for table, file in tables_and_files.items():
     try:
         # Load CSV into DataFrame

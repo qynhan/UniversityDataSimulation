@@ -11,7 +11,7 @@ output_files = {
     "CLUB": "clubs.csv",
     "EVENT": "events.csv",
     "EXPENSE": "expenses.csv",
-    "EVENT_RESOURCES": "event_resources.csv",
+    # "EVENT_RESOURCES": "event_resources.csv",
     "MEMBERSHIP": "memberships.csv",
     "DEPARTMENT": "departments.csv",
     "VENUE": "venues.csv",
@@ -269,7 +269,7 @@ def generate_all_data():
     generate_feedback()
     generate_applications()
     generate_sponsors()
-    generate_event_resources()
+    # generate_event_resources()
     
     print("Data generation completed! Check the CSV files.")
 
