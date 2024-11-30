@@ -10,7 +10,20 @@ output_file = "all_data.sql"
 def write_to_sql(file_path, table_name, data):
     with open(file_path, mode='a') as file:  # Open in append mode
         for row in data:
-            sql = f"INSERT INTO {table_name} ({', '.join(row.keys())}) VALUES ({', '.join(map(str, row.values()))});\n"
+            # Prepare the columns and values
+            columns = ', '.join(row.keys())
+            values = []
+
+            for value in row.values():
+                if isinstance(value, str):  # If the value is a string, wrap it in quotes
+                    values.append(f"'{value}'")
+                elif isinstance(value, bool):  # If it's a boolean, represent it as TRUE/FALSE
+                    values.append("TRUE" if value else "FALSE")
+                else:
+                    values.append(str(value))  # For other types (numbers, dates), no quotes
+
+            # Create the SQL query and write it to the file
+            sql = f"INSERT INTO {table_name} ({columns}) VALUES ({', '.join(values)});\n"
             file.write(sql)
 
 # Generate EVENT_RESOURCES data linking events to resources with quantity
@@ -212,32 +225,16 @@ def generate_applications(num_records=500):
         })
     write_to_sql(output_file, "APPLICATION", data)
 
-# Generate SPONSOR data
-def generate_sponsors(num_records=50):
-    data = []
-    for i in range(1, num_records + 1):
-        data.append({
-            "ID": i,
-            "Name": fake.company(),
-            "Amount": round(random.uniform(500, 10000), 2),
-            "EventID": random.randint(1, 1000)
-        })
-    write_to_sql(output_file, "SPONSOR", data)
-
-# Generate all data
+# Main function to generate data for all tables
 def generate_all_data():
-    # Open the output file once to initialize
-    with open(output_file, mode='w') as file:
-        file.write("")
-
-    # Generate all the tables
-    generate_students()
-    generate_clubs()
-    generate_events()
-    generate_expenses()
-    generate_memberships()
     generate_departments()
     generate_venues()
+    generate_clubs()
+    generate_students()
+    generate_events()
+    generate_event_resources()
+    generate_expenses()
+    generate_memberships()
     generate_staff()
     generate_tasks()
     generate_resources()
@@ -245,10 +242,5 @@ def generate_all_data():
     generate_volunteers()
     generate_feedback()
     generate_applications()
-    generate_sponsors()
-    generate_event_resources()
 
-# Call the function to generate all data
-generate_all_data()
-
-print("SQL data generation completed.")
+# Execute the
