@@ -243,4 +243,7 @@ def generate_all_data():
     generate_feedback()
     generate_applications()
 
-# Execute the
+# Execute the data generation
+generate_all_data()
+
+print("SQL file has been generated.")

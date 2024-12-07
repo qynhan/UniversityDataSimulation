@@ -407,9 +407,75 @@ INSERT INTO APPLICATION (ID, Position, Date, Status, ClubID, StudentID) VALUES
 
 
 
-SELECT E.Name AS EventName, 
-       COUNT(R.StudentID) AS StudentAttendance
-FROM EVENT E
-LEFT JOIN REGISTRATION R ON E.ID = R.EventID
-GROUP BY E.Name
-ORDER BY StudentAttendance DESC;
+-- SELECT E.Name AS EventName, 
+--        COUNT(R.StudentID) AS StudentAttendance
+-- FROM EVENT E
+-- LEFT JOIN REGISTRATION R ON E.ID = R.EventID
+-- GROUP BY E.Name
+-- ORDER BY StudentAttendance DESC;
+
+
+-- SELECT 
+--     d.Name AS DepartmentName, 
+--     COUNT(DISTINCT r.StudentID) AS TotalStudentsAttended
+-- FROM 
+--     DEPARTMENT d
+-- JOIN 
+--     CLUB c ON d.ID = c.DepartmentID
+-- JOIN 
+--     EVENT e ON c.ID = e.ClubID
+-- JOIN 
+--     REGISTRATION r ON e.ID = r.EventID
+-- WHERE 
+--     r.Attendance = TRUE
+-- GROUP BY 
+--     d.Name
+-- ORDER BY 
+--     TotalStudentsAttended DESC;
+
+
+SELECT 
+    d.Name AS DepartmentName,
+    ROUND(AVG(r.TotalStudentsAttended), 2) AS AvgStudentsAttended,
+    ROUND(AVG(e2.TotalSpending), 2) AS AvgSpending
+FROM 
+    DEPARTMENT d
+JOIN 
+    CLUB c ON d.ID = c.DepartmentID
+JOIN 
+    EVENT e ON c.ID = e.ClubID
+LEFT JOIN 
+    (SELECT 
+        EventID, 
+        COUNT(DISTINCT StudentID) AS TotalStudentsAttended
+    FROM 
+        REGISTRATION
+    WHERE 
+        Attendance = TRUE
+    GROUP BY 
+        EventID) r ON e.ID = r.EventID
+LEFT JOIN 
+    (SELECT 
+        EventID, 
+        SUM(SpentAmount) AS TotalSpending
+    FROM 
+        EXPENSE
+    GROUP BY 
+        EventID) e2 ON e.ID = e2.EventID
+GROUP BY 
+    d.Name
+ORDER BY 
+    AvgStudentsAttended DESC;
+
+
++-------------------------+---------------------+-------------+
+| DepartmentName          | AvgStudentsAttended | AvgSpending |
++-------------------------+---------------------+-------------+
+| Biology                 |               64.33 |      500.25 |
+| Communications          |               53.42 |     1275.50 |
+| Computer Science        |               50.87 |     1466.67 |
+| Business Administration |               34.36 |     1200.75 |
+| Psychology              |               19.34 |      475.50 |
+| Physics                 |               14.49 |      650.25 |
+| Mathematics             |               12.42 |      350.00 |
++-------------------------+---------------------+-------------+
